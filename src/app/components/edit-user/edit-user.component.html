@@ -1,0 +1,36 @@
+<p>edit-user works!</p>
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="mb-3">
+      <label>nis</label>
+      <input type="nis" formControlName="nis" class="form-control" required>
+    </div>
+  
+    <div class="mb-3">
+      <label>nama</label>
+      <input type="nama" formControlName="nama" class="form-control" required>
+    </div>
+  
+    <div class="mb-3">
+      <label>alamat</label>
+      <input type="alamat" formControlName="alamat" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>kontak</label>
+        <input type="kontak" formControlName="kontak" class="form-control" required>
+      </div>
+    
+      <div class="mb-3">
+        <label>warganegara</label>
+        <input type="warganegara" formControlName="warganegara" class="form-control" required>
+      </div>
+
+      <div class="mb-3">
+        <label>agama</label>
+        <input type="agama" formControlName="agama" class="form-control" required>
+      </div>
+    
+     <div class="mb-3">
+      <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+  </form>
