@@ -11,7 +11,7 @@ import { DashboardComponent } from './../app/dashboard/dashboard.component';
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';
 
 const routes: Routes =[
-  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+  { path: '', redirectTo: '/create', pathMatch: 'full' },
   { path: '', component: AdminLayoutComponent , children : [{
     path : '',
     loadChildren : ()=> import ('./layouts/admin-layout/admin-layout.module').then(m => m.AdminLayoutModule)

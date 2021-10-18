@@ -44,7 +44,8 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
       apiKey: 'YOUR_GOOGLE_MAPS_API_KEY'
     }),
     AngularFireModule.initializeApp(environment.firebaseConfig),
-    AngularFirestoreModule
+    AngularFirestoreModule,
+    
 
   ],
   declarations: [
@@ -54,7 +55,10 @@ import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.compon
     
 
   ],
-  providers: [],
+  providers: [
+    AngularFireModule,
+    AngularFirestoreModule
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
