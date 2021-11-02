@@ -9,6 +9,9 @@ import { SidebarComponent } from './sidebar/sidebar.component';
 import { CreateUserComponent } from './create-user/create-user.component';
 import { ListUserComponent } from './list-user/list-user.component';
 import { EditUserComponent } from './edit-user/edit-user.component';
+import { TanamanCreateComponent } from './tanaman-create/tanaman-create.component';
+import { TanamanListComponent } from './tanaman-list/tanaman-list.component';
+import { TanamanEditComponent } from './tanaman-edit/tanaman-edit.component';
 
 @NgModule({
   imports: [
@@ -23,7 +26,10 @@ import { EditUserComponent } from './edit-user/edit-user.component';
     SidebarComponent,
     CreateUserComponent,
     ListUserComponent,
-    EditUserComponent
+    EditUserComponent,
+    TanamanCreateComponent,
+    TanamanListComponent,
+    TanamanEditComponent
   ],
   exports: [
     FooterComponent,

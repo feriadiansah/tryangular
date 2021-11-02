@@ -8,7 +8,7 @@ import { Router } from "@angular/router";
 @Component({
   selector: 'app-create-user',
   templateUrl: './create-user.component.html',
-  styleUrls: ['./create-user.component.scss']
+  styleUrls: ['./create-user.component.css']
 })
 
 export class CreateUserComponent implements OnInit {
@@ -26,7 +26,7 @@ export class CreateUserComponent implements OnInit {
       kontak: [''],
       warganegara: [''],
       agama: [''],
-      alamat: ['']
+      alamat: [''],
     })      
   }
 

@@ -1,0 +1,29 @@
+<p>tanaman-list works!</p>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">nama</th>
+        <th scope="col">alamat</th>
+        <th scope="col">nomorhp</th>
+        <th scope="col">jenistanaman</th>
+        <th scope="col">modelpot</th>
+        
+       </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let tanaman of Tanaman; let i = index">
+        <th scope="row">{{ i + 1 }}</th>
+        <td>{{ tanaman.nama }}</td>
+        <td>{{ tanaman.alamat }}</td>
+        <td>{{ tanaman.nomorhp }}</td>
+        <td>{{ tanaman.jenistanaman }}</td>
+        <td>{{ tanaman.modelpot }}</td>
+        <td>
+          <span (click)="removeTanaman(tanaman)" class="text-danger">Delete</span> &nbsp;
+          <span routerLink="/update-tanaman/{{tanaman.id}}" class="text-primary">Edit</span>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+

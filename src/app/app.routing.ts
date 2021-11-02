@@ -5,7 +5,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 
-
 import { DashboardComponent } from './../app/dashboard/dashboard.component';
 
 import { AdminLayoutComponent } from './layouts/admin-layout/admin-layout.component';

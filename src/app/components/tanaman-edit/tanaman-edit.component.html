@@ -1,0 +1,32 @@
+<p>tanaman-edit works!</p>
+<form [formGroup]="editForm" (ngSubmit)="onSubmit()" novalidate>
+    <div class="mb-3">
+      <label>nama</label>
+      <input type="text" formControlName="text" class="form-control" required>
+    </div>
+  
+    <div class="mb-3">
+      <label>alamat</label>
+      <input type="alamat" formControlName="alamat" class="form-control" required>
+    </div>
+  
+    <div class="mb-3">
+      <label>nomorhp</label>
+      <input type="nomorhp" formControlName="nomorhp" class="form-control" required>
+    </div>
+
+    <div class="mb-3">
+        <label>jenistanaman</label>
+        <input type="jenistanaman" formControlName="jenistanaman" class="form-control" required>
+      </div>
+    
+      <div class="mb-3">
+        <label>modelpot</label>
+        <input type="modelpot" formControlName="modelpot" class="form-control" required>
+      </div>
+
+     <div class="mb-3">
+      <button type="submit" class="btn btn-primary">Update</button>
+    </div>
+  </form>
+

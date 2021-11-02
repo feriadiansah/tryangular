@@ -11,6 +11,9 @@ import { UpgradeComponent } from '../../upgrade/upgrade.component';
 import { CreateUserComponent } from '../../components/create-user/create-user.component';
 import { ListUserComponent } from '../../components/list-user/list-user.component';
 import { EditUserComponent } from '../../components/edit-user/edit-user.component';
+import { TanamanCreateComponent } from '../../components/tanaman-create/tanaman-create.component';
+import { TanamanListComponent } from '../../components/tanaman-list/tanaman-list.component';
+import { TanamanEditComponent } from '../../components/tanaman-edit/tanaman-edit.component';
 
 export const AdminLayoutRoutes: Routes = [
     // {
@@ -55,6 +58,24 @@ export const AdminLayoutRoutes: Routes = [
     //         component: UpgradeComponent
     //     }]
     // }
+      //     path: '',
+    //     children: [ {
+    //         path: 'create-tanaman',
+    //         component: TanamanCreateComponent
+    //     }]
+    // }
+      //     path: '',
+    //     children: [ {
+    //         path: 'list-tanaman',
+    //         component: TanamanListComponent
+    //     }]
+    // }
+      //     path: '',
+    //     children: [ {
+    //         path: 'edit-tanaman',
+    //         component: TanamanEditComponent
+    //     }]
+    // }
     { path: 'dashboard',      component: DashboardComponent },
     { path: 'user-profile',   component: UserProfileComponent },
     { path: 'table-list',     component: TableListComponent },
@@ -66,4 +87,7 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'create', component: CreateUserComponent },
   { path: 'list-users', component: ListUserComponent },
   { path: 'update-user/:id', component: EditUserComponent },
+  { path: 'TANAMAN' ,component: TanamanCreateComponent },
+  { path: 'LIST-TANAMAN' ,component: TanamanListComponent },
+  { path: 'update-tanaman/:id' ,component: TanamanEditComponent },
 ];
